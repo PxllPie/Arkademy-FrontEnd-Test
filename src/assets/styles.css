@@ -1,0 +1,205 @@
+
+.header {
+  padding: 0px 50px;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 99;
+  transition: all 0.9s;
+}
+
+/* Banner Start */
+
+.banner {
+  background: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  background-color: white;
+  z-index: -99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 50px;
+}
+
+.banner:before {
+  content: "";
+  position: absolute;
+  left: 0; 
+  right: 0;
+  top: 0; 
+  bottom: 0;
+  background: rgba(0, 74, 117, 0.7);
+}
+
+.bannerText {
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+  z-index: 10;
+}
+
+.hello {
+  font-size: calc(30px + 2vmin);
+  font-weight: 200;
+  margin-bottom: -20px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Banner End */
+
+
+
+.banner2 {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.paragraph {
+  max-width: 570px;
+  margin: 10px;
+}
+
+
+
+
+.fitures {
+  background-color: #e5e5e5;
+  padding: 50px 50px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 20px 0px;
+}
+
+.headerColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+.col {
+  box-shadow: 0px -1px 5px -2px rgba(0,0,0,1);
+  border-radius: 5px;
+  padding: 0px 30px;
+}
+
+
+
+.footer {
+  background-color: #131a4d;
+  color: white;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.notifPanel {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  transition: all 0.5s ease-in;
+}
+
+.notifText {
+  max-width: 600px;
+}
+
+.notifButton {
+  background-color: #007bc1;
+  border: none;
+  color: white;
+  padding: 7px 13px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px;
+}
+
+.notifButton:hover {
+  background-color: #004a75;
+}
+
+.newslater {
+  background-color: rgba(0, 123, 193, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  max-width: 500px;
+  padding: 5px 5px 30px 30px;
+  color: white;
+  transition: all 0.7s ease-in;
+}
+
+.closeNewslater {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+.input {
+  margin-right: 20px;
+  width: 70%;
+  padding: 5px;
+  border: none;
+}
+
+.inputValidation {
+  color: red;
+  margin-top: -1px;
+  margin-left: 3px;
+  font-size: calc(5px + 1vmin);
+}
+
+.submit {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  background-color: #ff8000;
+  cursor: pointer;
+  border-radius: 2px;
+}
